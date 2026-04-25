@@ -1,0 +1,14 @@
+@charset "UTF-8";  /* O @charset "UTF-8" serve para caracteres mais trabalhados caso de erro*/
+
+body{
+     background-color: lightgoldenrodyellow;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 20px;
+}
+
+h1{
+    color: darkred
+}
+p{
+    text-align: justify;
+}
