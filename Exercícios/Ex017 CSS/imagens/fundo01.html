@@ -3,14 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personalição dos Fundos</title>
+    <title>imagens dentro do box</title>
+</head>
     <style>
         body {
             background-image: url(wallpaper001.jpg);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(dimgray) (black);
+            margin-bottom: 60px;
+        }
+
+        header {
+            display: flex;
+            gap: 160px;
+            margin: 20px;
+        }
+
+        .box {
+            height: 300px;
+            width: 300px;
+            background-color: dimgray;
+            border: 2px solid black;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+
+        }
+
+        .box:hover {
+            transform: translateY(-10px); /* Sobe */
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+            background-color: white;
+            border:  2px solid rgb(255, 255, 255);
+        }
+
+        .box#box1 {
+            background-image: url(wallpaper002.jpg);
+            background-position: left top;  /* Esquerda e em Cima  */
+        }
+
+        .box#box2 {
+            background-image: url(wallpaper002.jpg);
+             background-position: left center;  /*  Esquerdo no meio da img  */ 
+        }
+
+        .box#box3 {
+            background-image: url(wallpaper002.jpg);
+             background-position: center center;  /* no meio */ 
+        }
+
+        .box#box4 {
+            background-image: url(wallpaper002.jpg);
+             background-position: right bottom;  /* direito em baixo */
         }
     </style>
-</head>
 <body>
-    <h1>Teste de Aplicação de fundo</h1>
+    <h1>Box abaixo:</h1>
+    <header>
+        <div class="box" id="box1">
+                
+        </div>
+
+         <div class="box" id="box2">
+            
+         </div>
+
+
+         <div class="box" id="box3">
+            
+         </div>
+
+         <div class="box" id="box4">
+                
+        </div>
+    </header>
+    
 </body>
 </html>
