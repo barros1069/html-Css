@@ -11,6 +11,7 @@
 
         table {
             width: 500px;
+            position: relative;
         }
 
         caption {
@@ -29,6 +30,11 @@
         thead {
             background-color: dimgray;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
         }
 
         tbody > tr:nth-child(2n) {  /* Efeito Zebrado */
