@@ -4,13 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de iframe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+        }
+
+        h1 {
+            padding-top: 30px;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        iframe {
+            width: 500px;
+            height: 400px;
+            display: flex;
+            margin: auto;
+            box-shadow: 1px 1px 1px;
+        }
+    </style>
 </head>
 <body>
     <h1>Testando o uso de um iframe</h1>
     <p>Acessando site do 
-        
-        <iframe src="" frameborder="0"></iframe>
-        
-        curso em video pra aprender a programar</p>
+        <!-- Tamanho padrão 300x150 -->
+        <iframe src="https://www.instagram.com/" frameborder="0"></iframe>
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a> <!--Se o iframe n for compativel com o nabegador abaixo uso a (a href).-->
+        </p>
 </body>
 </html>
