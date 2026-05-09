@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set Tet</title>
+    <style>
+        * {
+            margin: 0; padding: 0; list-style: none; text-decoration: none; 
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+    
+        body {
+           background-image: linear-gradient(to right, rgb(22, 1, 181), dimgray);
+           text-decoration: none;
+        }
+
+        header {
+            background-image: linear-gradient(to right,rgb(22, 1, 181), dimgray);
+        }
+         header > h1 {
+            font-family: Arial, Helvetica, sans-serif; text-align: center; padding-top: 30px; color: rgba(103, 0, 0, 0); font-weight: bolder;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        nav > a {
+            font-family: "Passion One", sans-serif;
+            font-weight: bolder;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            display: inline-block;
+            color: white;
+            transition: 0,2;
+            padding: 10px;
+            margin: 2px;
+            width: 400px;
+            height: 15px;
+            padding-top: 3px;
+        }
+
+        nav > a:hover  {
+            background-color: rgba(35, 2, 163, 0.559);
+            text-decoration: underline;
+            border-radius: 20px;
+             transform: translateY(-10px);
+             transition: 2s;
+             padding-bottom: -70px;
+             box-shadow: 3px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Cabeçario
+        </h1>
+            <nav>
+            <a href="#">Logar</a>
+            <a href="#">Informe</a>
+            <a href="#">Conta</a>
+            <a href="#">Download</a>
+            <a href="#">Sobre</a>
+            </nav>
+    </header>
+    <main>
+        <p>Login</p>
+        <input type="text" name="login" id="ilogin">
+        <input type="submit">
+    </main>
