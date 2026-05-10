@@ -16,6 +16,13 @@
         body {
            background-image: linear-gradient(to right, rgb(22, 1, 181), dimgray);
            text-decoration: none;
+          
+           align-items: center;     /* vertical */
+        }
+
+        html, body {
+            height: 100vh;
+            width: 100vw;
         }
 
         header {
@@ -56,7 +63,24 @@
              padding-bottom: -70px;
              box-shadow: 3px;
         }
-        
+
+            main {
+                position: relative;
+                display: flex;
+                
+            }
+
+            iframe {
+             display: flex;
+             
+    }
+
+    div > img {  
+        position: absolute;  /* Para Centralizar */
+        top: 50%;  /* Para Centralizar */
+        left: 50%;  /* Para Centralizar */
+        transform: translate(-50%);   /* Para Centralizar */
+    } 
     </style>
 </head>
 <body>
@@ -72,4 +96,11 @@
             <a href="#">Sobre</a>
             </nav>
     </header>
-    
+    <main>
+        <div>
+            <iframe src="" id="cll"></iframe>
+            <img src="img/imagens/frame-iphone.png" alt="foto de um Celular." id="cll">
+        </div>
+    </main>
+    </body>
+</html>
