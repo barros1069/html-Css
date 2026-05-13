@@ -24,10 +24,12 @@
 </head>
 <body>
     <h1>Meu  primeiro Formulário</h1>
-    <form action="cadastro.php" autocomplete="off"> <!-- O action funciona para localizar a pasta para onde vai os dados --> <!-- o autocomplete off é para não ter sugestão de dados ao digitar -->
-            <p><label for="inome">Nome</label> <input type="text" name="nome" id="inome"></p>
-        <p><label for="isobrenome">Sobrenome</label> <input type="text" name="sobrenome" id="isobrenome"></p>
-        <input type="button" value="Enviar">
+    <form action="cadastro.php" method="post" autocomplete="off"> <!-- O action funciona para localizar a pasta para onde vai os dados --> <!-- o autocomplete off é para não ter sugestão de dados ao digitar -->
+            <p><label for="inome">Nome</label> 
+                <input type="text" name="nome" id="inome" required></p>
+        <p><label for="isobrenome">Sobrenome</label> 
+            <input type="text" name="sobrenome" id="isobrenome" required></p>
+        <input type="submit" value="Enviar">
     </form>
 </body>
 </html>
