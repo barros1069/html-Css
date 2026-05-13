@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo  de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>sexo</legend>
+            <p><label for="imasc">Maculino</label> <input type="radio" name="sexo" id="imasc"></p> <!--no name os nomes estão iguais para n poder marcar as duas bolinhas-->
+            <p><label for="ifem">Feminino</label> <input type="radio" name="sexo" id="ifem"></p>
+            <!--no name os nomes estão iguais para n poder marcar as duas bolinhas-->
+        </fieldset>
+    <fieldset>
+        <legend>Esportes Favoritos</legend>
+        <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label> <!--  O type checkbox serve para marcar alternativas -->
+         <p><input type="checkbox" name="esfutsal" id="iesfutsal"> <label for="iesfutsal">Futsal</label></p> <!--  O type checkbox serve para marcar alternativas -->
+          <p><input type="checkbox" name="esvol" id="iesvol"> <label for="iesvol">Volei</label></p> <!--  O type checkbox serve para marcar alternativas -->
+           <p><input type="checkbox" name="esbasq" id="iesbasq"> <label for="iesbasq">Basquete</label></p> <!--  O type checkbox serve para marcar alternativas -->
+    </fieldset>
+
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+    </form>
+</body>
+</html>
