@@ -12,11 +12,34 @@
         <p>
            <label for="iest">Estado</label>
            <select name="estado" id="iest">
-           <option value="RJ">Rio de Janeiro</option>
-           <option value="SP">São Paulo</option>
-           <option value="MG">Minas Gerais</option>
+           <optgroup label="Região Sudeste">
+               <option value="RJ">Rio de Janeiro</option>
+               <option value="SP">São Paulo</option>
+               <option value="MG">Minas Gerais</option>
+           </optgroup>
+
+           <optgroup label="Região Nordeste">
+               <option value="PE">Pernambuco</option>
+               <option value="NT">Natal</option>
+               <option value="RN">Rio Grande do Norte</option>
+           </optgroup>
            </select>
         </p>
+
+        <label for="iprof">Profissão</label>
+        <p><input type="text" name="prof" id="iprof" list="lstprof"></p> <!--List fazendo a conexão com a data list abaixo.(para por uma lista para selecionar.)-->
+        <datalist id="lstprof"> 
+            <option value="BBR">Barbeiro</option>
+            <option value="JGD">Jogador</option>
+            <option value="ADM">Administrador</option>
+            <option value="DEV">Desenvolvedor</option>
+        </datalist>
+
+        <p>
+            <label for="imsg">Mensagem: </label><br>
+            <textarea name="Msg" id="imsg" cols="30" rows="10" required></textarea>
+        </p>
+
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
