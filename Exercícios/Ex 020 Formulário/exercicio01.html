@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exercício de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="ipecas">Peças</label>
+            <select name="pecas" id="ipecas">Peças
+            <option value="jeans">Jeans</option>
+            <option value="Brin">Brin</option>
+            <option value="Malha">Malha</option>
+            <option value="lycra">Lycra</option>
+            </select>
+        </p>
+            <label for="imaq">Maquinás</label>
+            <input type="text" name="maq" id="imaq" list="lstmaq">
+            <datalist id="lstmaq">
+                <option value="Reta">Reta</option>
+                <option value="Interlock">Interlock</option>
+                <option value="2 Agulhas">2 Agulhas</option>
+                <option value="Máquina de Braço">Máquina de Braço</option>
+                <option value="Goleira">Goleira</option>
+            </datalist>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>

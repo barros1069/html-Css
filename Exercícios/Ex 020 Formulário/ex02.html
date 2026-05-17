@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de form</h1>
+    <form action="cadastro.php method="post>
+    <p>
+        <label for="icar">Carro</label>
+        <select name="carro" id="icar">
+        <optgroup label="Carros frances">
+            <option value="Lamborghini">Lamborghini</option>
+            <option value="Ferrari">Ferrari</option>
+            <option value="Mercedes">Mercedes</option>
+            
+        </optgroup>
+
+        <optgroup label="Carros alemães">
+            <option value="Fiat">Fiat</option>
+            <option value="Wolksvagem">Wolksvagem</option>
+            <option value="Transformer">Transformer</option>
+            <option value="Ford">Ford</option>
+        </optgroup>
+        </select>
+        <p>
+            <label for="imod">Modelos</label>
+            <select name="mod" id="imod">
+                <option value="Gol">Gol</option>
+                <option value="Uno">Uno</option>
+                <option value="Pálio">Pálio</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="ipla">Placa</label><br>
+           <textarea name="placa" id="ipla" cols="30" rows="10"></textarea>  
+        </p>
+
+        <p>
+            <label for="icasa">Escolha sua Casa: </label>  
+            <input type="text" name="casa" id="icasa" list="icasa">  
+            <datalist id="icasa">  
+                <input type="text" name="casa" id="icasa" list="icasa">
+                <option value="apto">apto</option>
+                <option value="casa">casa</option>
+                <option value="condominio">condominio</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="iani">animal</label>
+            <input type="text" name="animal" id="iani">
+            <datalist id="iani">
+                <option value="Macaco">Macaco</option>
+                <option value="Mico-Leão-Dourado">Mico-Leão-Dourado</option>
+                <option value="Saguin">Saguin</option>
+            </datalist>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </p>
+    </form>
+</body>
+</html>
